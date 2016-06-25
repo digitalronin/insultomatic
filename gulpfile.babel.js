@@ -1,4 +1,6 @@
-"use strict";
+(() => {
+  "use strict";
+})();
 
 import gulp from "gulp";
 import browserify from "browserify";
