@@ -5,7 +5,8 @@ class InsultClause extends Randomizer {
     return [
       "ferret-haired",
       "tiny-fingered",
-      "cheeto-faced"
+      "cheeto-faced",
+      "weasel-headed",
     ];
   }
 

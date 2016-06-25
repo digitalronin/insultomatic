@@ -1,8 +1,8 @@
 import InsultGenerator from './insult-generator';
 
-function run() {
+window.generateInsult = () => {
   let target = document.getElementsByTagName('main')[0];
   target.innerHTML = InsultGenerator.generate();
-}
+};
 
-run();
+window.generateInsult();

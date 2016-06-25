@@ -12,6 +12,8 @@ let InsultGenerator = {
           ${this.conclusion()}
         </span>
       </div>
+      <!-- TODO: this is a hack. Find a better way. -->
+      <button onClick='window.generateInsult()'>Refresh</button>
     `;
   },
 
@@ -20,7 +22,7 @@ let InsultGenerator = {
   },
 
   clauses() {
-    let arr = (new InsultClause()).pickItems(2);
+    let arr = (new InsultClause()).pickItems(3);
     return arr.map((clause) => { return (new InsultClause()).render(clause); });
   }
 };

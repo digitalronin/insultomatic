@@ -3,12 +3,14 @@ import Randomizer from "./randomizer";
 class InsultConclusion extends Randomizer {
   DATA() {
     return [
-      "knob-gobbler",
       "cock-womble",
-      "spunk-trumpet",
-      "muppet",
+      "fuck-muppet",
       "numpty",
-      "tool"
+      "cocksplat",
+      "jizz-trumpet",
+      "shitgibbon",
+      "fuck-nugget",
+      "ballbag"
     ];
   }
 
