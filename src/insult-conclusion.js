@@ -19,7 +19,6 @@ class InsultConclusion extends Randomizer {
       </span>
     `;
   }
-
 }
 
 export default InsultConclusion;

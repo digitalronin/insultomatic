@@ -16,7 +16,6 @@ class InsultClause extends Randomizer {
       </span>
     `;
   }
-
 }
 
 export default InsultClause;
