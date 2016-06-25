@@ -1,13 +1,15 @@
 class Randomizer {
-  pickItems(n) {
-    if (n > this.DATA().length) {
-      throw(`Randomizer.pickItems: ${n} requested but only ${this.DATA().length} available`);
+  pickItems(n, list) {
+    list = list || this.DATA();
+
+    if (n > list.length) {
+      throw(`Randomizer.pickItems: ${n} requested but only ${list.length} available`);
     }
 
     let set = new Set();
 
     while(set.size < n) {
-      set.add(this.randomItem());
+      set.add(this.randomItem(list));
     }
 
     let rtn = [];
@@ -16,9 +18,9 @@ class Randomizer {
     return rtn;
   }
 
-  randomItem() {
-    let i = Math.floor(Math.random() * this.DATA().length);
-    return this.DATA()[i];
+  randomItem(list) {
+    let i = Math.floor(Math.random() * list.length);
+    return list[i];
   }
 
 }

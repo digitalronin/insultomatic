@@ -40,7 +40,7 @@ class InsultGenerator {
   }
 
   _conclusion() {
-    return (new InsultConclusion()).pickItems(1);
+    return (new InsultConclusion()).pick();
   }
 
   _bindActions() {

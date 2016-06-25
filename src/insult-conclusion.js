@@ -14,6 +14,10 @@ class InsultConclusion extends Randomizer {
     ];
   }
 
+  pick() {
+    return this.pickItems(1);
+  }
+
   render(text) {
     return `
       <span class="clause">
