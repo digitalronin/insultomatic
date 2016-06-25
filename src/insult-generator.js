@@ -19,8 +19,8 @@ let InsultGenerator = {
   },
 
   clauses() {
-    let arr = InsultClause.clauses(2);
-    return arr.map((clause) => { return InsultClause.render(clause); });
+    let arr = (new InsultClause()).clauses(2);
+    return arr.map((clause) => { return (new InsultClause()).render(clause); });
   }
 };
 

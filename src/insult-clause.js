@@ -1,13 +1,15 @@
-let InsultClause = {
-  DATA: [
-    "ferret-haired",
-    "tiny-fingered",
-    "cheeto-faced"
-  ],
+class InsultClause {
+  DATA() {
+    return [
+      "ferret-haired",
+      "tiny-fingered",
+      "cheeto-faced"
+    ];
+  }
 
   clauses(n) {
-    if (n > this.DATA.length) {
-      throw(`InsultClause.clauses: ${n} requested but only ${this.DATA.length} available`);
+    if (n > this.DATA().length) {
+      throw(`InsultClause.clauses: ${n} requested but only ${this.DATA().length} available`);
     }
 
     let set = new Set();
@@ -20,7 +22,7 @@ let InsultClause = {
     for(let i of set.values()) { rtn.push(i); }
 
     return rtn;
-  },
+  }
 
   render(text) {
     return `
@@ -28,13 +30,12 @@ let InsultClause = {
         ${text}
       </span>
     `;
-  },
-
-  randomText() {
-    let i = Math.floor(Math.random() * this.DATA.length);
-    return this.DATA[i];
   }
 
-};
+  randomText() {
+    let i = Math.floor(Math.random() * this.DATA().length);
+    return this.DATA()[i];
+  }
+}
 
 export default InsultClause;
