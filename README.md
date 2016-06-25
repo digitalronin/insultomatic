@@ -4,7 +4,7 @@ https://twitter.com/exlibris/status/746438427671814144
 
 # TODO
 
-- build pipeline
+- styling
 - deployment
 - tests
 - basic insult generation
@@ -21,6 +21,7 @@ https://twitter.com/exlibris/status/746438427671814144
     - actor
     - gerund
 - interface
+  - auto-advance (insult slideshow)
   - animations
     - slot machine
   - target (pictures of people I hate)
