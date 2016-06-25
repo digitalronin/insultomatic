@@ -1,4 +1,5 @@
 import InsultClause from './insult-clause';
+import InsultConclusion from './insult-conclusion';
 
 let InsultGenerator = {
   generate() {
@@ -15,7 +16,7 @@ let InsultGenerator = {
   },
 
   conclusion() {
-    return "knob-gobbler";
+    return (new InsultConclusion()).pickItems(1);
   },
 
   clauses() {
