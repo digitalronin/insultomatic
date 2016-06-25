@@ -13,16 +13,23 @@ class InsultGenerator {
   }
 
   _generateHtml() {
+    return this._template({
+      clauses: this._clauses().join(''),
+      conclusion: this._conclusion()
+    });
+  }
+
+  _template(attrs) {
     return `
       <div class="insult">
         <span class="clauses">
-          ${this._clauses().join('')}
+          ${attrs.clauses}
         </span>
         <span class="conclusion">
-          ${this._conclusion()}
+          ${attrs.conclusion}
         </span>
       </div>
-      <button id='new-insult'>Refresh</button>
+      <button id='new-insult' class='btn btn-primary btn-lg'>Hit me again!</button>
     `;
   }
 

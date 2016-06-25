@@ -6,7 +6,7 @@ import gulp from "gulp";
 import browserify from "browserify";
 import source from "vinyl-source-stream";
 
-gulp.task("default", ["transpile"]);
+gulp.task("default", ["transpile", "copy-assets"]);
 
 gulp.task("transpile", () => {
 
@@ -18,6 +18,11 @@ gulp.task("transpile", () => {
 
 });
 
-gulp.task("watch", ["transpile"], () => {
-  gulp.watch("src/**/*", ["transpile"]);
+gulp.task("copy-assets", () => {
+  return gulp.src("src/assets/css/*.css")
+    .pipe(gulp.dest("dist"));
+});
+
+gulp.task("watch", ["transpile", "copy-assets"], () => {
+  gulp.watch("src/**/*", ["default"]);
 });
