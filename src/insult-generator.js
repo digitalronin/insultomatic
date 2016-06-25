@@ -19,7 +19,7 @@ let InsultGenerator = {
   },
 
   clauses() {
-    let arr = (new InsultClause()).clauses(2);
+    let arr = (new InsultClause()).pickItems(2);
     return arr.map((clause) => { return (new InsultClause()).render(clause); });
   }
 };
