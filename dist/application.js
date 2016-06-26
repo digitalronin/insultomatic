@@ -158,11 +158,11 @@ var InsultDataMixin = function InsultDataMixin(Base) {
     _createClass(_class, [{
       key: "ENTITIES",
       value: function ENTITIES() {
-        var animals = ["rat", "weasel", "hound", "whippet", "ferret", "stoat", "monkey", "gibbon", "muppet", "womble", "muppet", "panda", "goblin", "toad", "hog", "frog", "gecko", "lizard", "penguin", "wombat", "slug", "worm", "maggot", "chicken", "squirrel", "hamster", "gerbil", "rabbit", "rodent", "badger", "demon", "devil", "ogre", "zombie", "vampire", "pigeon", "puffin", "turkey", "mongoose", "gargoyle", "troll", "snipe", "shrew", "shrike", "vulture"];
+        var animals = ["rat", "weasel", "hound", "whippet", "ferret", "stoat", "monkey", "gibbon", "muppet", "womble", "muppet", "panda", "goblin", "toad", "hog", "frog", "gecko", "lizard", "penguin", "wombat", "slug", "worm", "maggot", "grub", "larva", "beetle", "chicken", "squirrel", "hamster", "gerbil", "rabbit", "rodent", "badger", "demon", "devil", "ogre", "zombie", "vampire", "pigeon", "parrot", "puffin", "turkey", "mongoose", "gargoyle", "troll", "monster", "snipe", "shrew", "shrike", "vulture"];
 
-        var actors = ["thief", "wanker", "fucker", "herder", "worrier", "botherer", "collector", "guzzler", "farmer"];
+        var actors = ["thief", "wanker", "fucker", "herder", "worrier", "botherer", "collector", "guzzler", "jerker", "tugger", "puller", "breeder", "poker", "fister", "farmer", "curdler"];
 
-        var things = ["nugget", "sack", "splat", "bag", "waffle", "turd", "fart", "cock", "cunt", "trumpet", "whistle", "stick", "doughnut", "burger", "pizza", "cake", "salad", "trifle"];
+        var things = ["nugget", "sack", "splat", "bag", "pot", "jug", "teapot", "waffle", "turd", "fart", "cock", "cunt", "twat", "lackwit", "trumpet", "whistle", "stick", "doughnut", "burger", "pizza", "cake", "salad", "trifle"];
 
         return things.concat(actors).concat(animals);
       }
@@ -174,7 +174,7 @@ var InsultDataMixin = function InsultDataMixin(Base) {
     }, {
       key: "ANATOMISED",
       value: function ANATOMISED() {
-        return ["brained", "faced", "eyed", "browed", "nosed", "lipped", "mouthed", "cheeked", "eared", "necked", "gutted", "waisted", "bellied", "fingered", "handed", "armed", "chested", "faced", "toothed", "shouldered", "hipped", "haired", "legged", "arsed", "bottomed", "footed", "toed", "smelling", "boned", "skinned", "hearted", "spleened", "livered"];
+        return ["brained", "faced", "headed", "necked", "eyed", "browed", "nosed", "lipped", "jawed", "mouthed", "cheeked", "eared", "gutted", "waisted", "bellied", "fingered", "handed", "armed", "chested", "faced", "toothed", "shouldered", "hipped", "haired", "legged", "arsed", "bottomed", "footed", "toed", "smelling", "boned", "skinned", "hearted", "spleened", "livered"];
       }
     }]);
 
@@ -215,7 +215,7 @@ var InsultGenerator = function () {
   _createClass(InsultGenerator, [{
     key: 'setup',
     value: function setup() {
-      this.target.innerHTML = '\n      <p>\n        NSFW. Do not click if you are easily offended.<br />\n        This is your only warning.\n      </p>\n      ' + this._button("I can take it. Hit me!") + '\n    ';
+      this.target.innerHTML = '\n      <p>\n        NSFW. Highly offensive. Click at your own risk.<br />\n        This is your only warning.\n      </p>\n      ' + this._button("I can take it. Hit me!") + '\n    ';
       this._bindActions();
     }
   }, {

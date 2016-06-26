@@ -44,6 +44,10 @@ button {
   white-space:          nowrap;
 }
 
+ul {
+  font-size:  2rem;
+}
+
 li {
   margin-bottom: 1.5rem;
 }
