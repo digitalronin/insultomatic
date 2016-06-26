@@ -55,10 +55,11 @@ var InsultClause = function (_InsultDataMixin) {
       var anatomised = this.pickItems(n, this.ANATOMISED());
 
       while (n > 0) {
-        rtn.push([attributes[n - 1], anatomised[n - 1]].join('-'));
+        rtn.push([attributes[n - 1], anatomised[n - 1]].join('-').replace("--", "-"));
         n--;
       }
 
+      // some words end in a hyphen, already
       return rtn;
     }
   }]);
@@ -162,14 +163,14 @@ var InsultDataMixin = function InsultDataMixin(Base) {
 
         var actors = ["thief", "wanker", "fucker", "herder", "worrier", "botherer", "collector", "guzzler", "jerker", "tugger", "puller", "breeder", "poker", "fister", "farmer", "curdler"];
 
-        var things = ["nugget", "sack", "splat", "bag", "pot", "jug", "teapot", "waffle", "turd", "fart", "cock", "cunt", "twat", "lackwit", "trumpet", "whistle", "stick", "doughnut", "burger", "pizza", "cake", "salad", "trifle"];
+        var things = ["nugget", "sack", "splat", "bag", "pot", "jug", "teapot", "waffle", "turd", "fart", "cock", "cunt", "twat", "trumpet", "whistle", "stick", "doughnut", "burger", "pizza", "cake", "salad", "trifle"];
 
         return things.concat(actors).concat(animals);
       }
     }, {
       key: "ATTRIBUTES",
       value: function ATTRIBUTES() {
-        return ["dick", "cock", "fuck", "shit", "turd", "fart", "jizz", "spunk", "arse", "wank", "cunt", "lard", "vomit", "puke", "piss", "urine", "pus", "gutter", "bile", "phlegm", "sweat", "mucus", "snot"];
+        return ["dick", "cock", "fuck", "shit", "turd", "fart", "jizz", "spunk", "arse", "wank", "cunt", "lard", "vomit", "puke", "piss", "urine", "pus-", "gutter", "bile", "phlegm", "sweat", "mucus", "snot"];
       }
     }, {
       key: "ANATOMISED",

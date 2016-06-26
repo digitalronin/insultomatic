@@ -11,10 +11,15 @@ class InsultClause extends InsultDataMixin(Randomizer) {
     let anatomised = this.pickItems(n, this.ANATOMISED());
 
     while(n > 0) {
-      rtn.push([ attributes[n - 1], anatomised[n - 1] ].join('-'));
+      rtn.push(
+        [ attributes[n - 1], anatomised[n - 1] ]
+        .join('-')
+        .replace("--", "-")
+      );
       n--;
     }
 
+    // some words end in a hyphen, already
     return rtn;
   }
 
