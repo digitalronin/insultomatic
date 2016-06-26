@@ -1,11 +1,7 @@
 let InsultDataMixin = Base => class extends Base {
 
   ENTITIES() {
-    return [
-      "nugget",
-      "sack",
-      "splat",
-      "bag",
+    const animals = [
       "rat",
       "weasel",
       "ferret",
@@ -16,16 +12,75 @@ let InsultDataMixin = Base => class extends Base {
       "muppet",
       "panda",
       "goblin",
+      "toad",
+      "hog",
+      "frog",
+      "gecko",
+      "lizard",
+      "penguin",
+      "wombat",
+      "slug",
+      "worm",
+      "maggot",
+      "chicken",
+      "squirrel",
+      "hamster",
+      "gerbil",
+      "rabbit",
+      "rodent",
+      "badger",
+      "demon",
+      "devil",
+      "ogre",
+      "zombie",
+      "vampire",
+      "pigeon",
+      "puffin",
+      "turkey",
+      "mongoose",
+      "gargoyle",
+      "troll",
+      "snipe",
+      "shrew",
+      "shrike",
+      "vulture",
+    ];
+
+    const actors = [
+      "thief",
+      "wanker",
+      "fucker",
+      "herder",
+      "worrier",
+      "botherer",
+      "collector",
+      "guzzler",
+      "farmer",
+    ];
+
+    const things = [
+      "nugget",
+      "sack",
+      "splat",
+      "bag",
       "waffle",
       "turd",
       "fart",
       "cock",
       "cunt",
+      "trumpet",
+      "doughnut",
+      "cake",
+      "salad",
+      "trifle",
     ];
+
+    return things.concat(actors).concat(animals);
   }
 
   ATTRIBUTES() {
     return [
+      "dick",
       "cock",
       "fuck",
       "shit",
@@ -36,23 +91,56 @@ let InsultDataMixin = Base => class extends Base {
       "arse",
       "wank",
       "cunt",
+      "lard",
+      "vomit",
+      "puke",
+      "piss",
+      "urine",
+      "pus",
+      "gutter",
+      "bile",
+      "phlegm",
+      "sweat",
+      "mucus",
+      "snot",
     ];
   }
 
   ANATOMISED() {
     return [
+      "brained",
       "faced",
+      "eyed",
+      "browed",
+      "nosed",
+      "lipped",
+      "mouthed",
+      "cheeked",
+      "eared",
+      "necked",
       "gutted",
+      "waisted",
       "bellied",
       "fingered",
       "handed",
+      "armed",
       "chested",
       "faced",
+      "toothed",
+      "shouldered",
+      "hipped",
       "haired",
       "legged",
       "arsed",
+      "bottomed",
       "footed",
       "toed",
+      "smelling",
+      "boned",
+      "skinned",
+      "hearted",
+      "spleened",
+      "livered",
     ];
   }
 
