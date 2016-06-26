@@ -7,6 +7,17 @@ class InsultGenerator {
     this.target = config.target;
   }
 
+  setup() {
+    this.target.innerHTML = `
+      <p>
+        NSFW. Do not click if easily offended.<br />
+        This is your only warning.
+      </p>
+      ${this._button("I can take it. Hit me!")}
+    `;
+    this._bindActions();
+  }
+
   generate() {
     this.target.innerHTML = this._generateHtml();
     this._bindActions();
@@ -33,6 +44,14 @@ class InsultGenerator {
       </div>
       <button id='new-insult' class='btn btn-primary btn-lg'>Hit me again!</button>
     `;
+  }
+
+  _button(text) {
+    text = text || 'Hit me again!';
+
+    return `
+      <button id='new-insult' class='btn btn-primary btn-lg'>${text}</button>
+      `;
   }
 
   _clauses() {
