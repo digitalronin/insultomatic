@@ -161,21 +161,21 @@ var InsultDataMixin = function InsultDataMixin(Base) {
       value: function ENTITIES() {
         var animals = ["rat", "weasel", "hound", "puppy", "piglet", "whippet", "ferret", "stoat", "monkey", "gibbon", "muppet", "womble", "muppet", "panda", "goblin", "toad", "hog", "frog", "gecko", "lizard", "penguin", "wombat", "slug", "worm", "maggot", "grub", "larva", "beetle", "chicken", "squirrel", "hamster", "gerbil", "rabbit", "rodent", "badger", "demon", "devil", "ogre", "zombie", "vampire", "pigeon", "parrot", "puffin", "turkey", "mongoose", "gargoyle", "troll", "monster", "snipe", "shrew", "shrike", "vulture"];
 
-        var actors = ["thief", "wanker", "fucker", "herder", "worrier", "botherer", "collector", "guzzler", "jerker", "tugger", "puller", "breeder", "poker", "fister", "farmer", "curdler"];
+        var actors = ["thief", "wanker", "fucker", "herder", "worrier", "botherer", "collector", "guzzler", "jerker", "tugger", "puller", "breeder", "poker", "fister", "farmer", "curdler", "groper", "fondler"];
 
-        var things = ["nugget", "sack", "splat", "bag", "pot", "jug", "teapot", "waffle", "turd", "fart", "cock", "cunt", "twat", "trumpet", "whistle", "stick", "doughnut", "burger", "crumpet", "pizza", "cake", "salad", "trifle"];
+        var things = ["nugget", "sack", "splat", "bag", "pot", "jug", "teapot", "waffle", "turd", "fart", "cock", "cunt", "twat", "trumpet", "whistle", "stick", "doughnut", "burger", "crumpet", "gherkin", "pickle", "pizza", "cake", "salad", "trifle"];
 
         return things.concat(actors).concat(animals);
       }
     }, {
       key: "ATTRIBUTES",
       value: function ATTRIBUTES() {
-        return ["dick", "cock", "fuck", "shit", "turd", "fart", "jizz", "spunk", "arse", "wank", "cunt", "lard", "vomit", "puke", "piss", "urine", "pus-", "gutter", "bile", "phlegm", "sweat", "mucus", "snot"];
+        return ["dick", "cock", "fuck", "shit", "turd", "fart", "jizz", "spunk", "arse", "wank", "cunt", "dirt", "mud", "lard", "vomit", "puke", "piss", "urine", "pus-", "gutter", "bile", "phlegm", "sweat", "mucus", "snot"];
       }
     }, {
       key: "ANATOMISED",
       value: function ANATOMISED() {
-        return ["brained", "faced", "headed", "necked", "eyed", "browed", "nosed", "lipped", "jawed", "mouthed", "cheeked", "eared", "gutted", "waisted", "bellied", "fingered", "handed", "armed", "chested", "faced", "toothed", "shouldered", "hipped", "haired", "legged", "arsed", "bottomed", "footed", "toed", "smelling", "boned", "skinned", "hearted", "spleened", "livered"];
+        return ["brained", "faced", "headed", "necked", "eyed", "browed", "nosed", "lipped", "jawed", "mouthed", "cheeked", "eared", "gutted", "waisted", "bellied", "fingered", "handed", "armed", "chested", "faced", "toothed", "shouldered", "hipped", "haired", "legged", "arsed", "bottomed", "footed", "toed", "smelling", "groping", "fondling", "grooming", "boned", "skinned", "hearted", "spleened", "livered"];
       }
     }]);
 

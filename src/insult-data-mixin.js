@@ -73,6 +73,8 @@ let InsultDataMixin = Base => class extends Base {
       "fister",
       "farmer",
       "curdler",
+      "groper",
+      "fondler",
     ];
 
     const things = [
@@ -95,6 +97,8 @@ let InsultDataMixin = Base => class extends Base {
       "doughnut",
       "burger",
       "crumpet",
+      "gherkin",
+      "pickle",
       "pizza",
       "cake",
       "salad",
@@ -117,6 +121,8 @@ let InsultDataMixin = Base => class extends Base {
       "arse",
       "wank",
       "cunt",
+      "dirt",
+      "mud",
       "lard",
       "vomit",
       "puke",
@@ -164,6 +170,9 @@ let InsultDataMixin = Base => class extends Base {
       "footed",
       "toed",
       "smelling",
+      "groping",
+      "fondling",
+      "grooming",
       "boned",
       "skinned",
       "hearted",
