@@ -16,13 +16,6 @@ class InsultClause extends InsultDataMixin(Randomizer) {
     return this.pickItems(n);
   }
 
-  render(text) {
-    return `
-      <span class="clause">
-        ${text}
-      </span>
-    `;
-  }
 }
 
 export default InsultClause;
