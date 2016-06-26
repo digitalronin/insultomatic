@@ -18,6 +18,10 @@ class Randomizer {
     return rtn;
   }
 
+  combine(list1, list2) {
+    return this.pickItems(1, list1) + this.pickItems(1, list2);
+  }
+
   randomItem(list) {
     let i = Math.floor(Math.random() * list.length);
     return list[i];

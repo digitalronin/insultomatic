@@ -1,21 +1,41 @@
 import Randomizer from "./randomizer";
 
 class InsultConclusion extends Randomizer {
-  DATA() {
+
+  ENTITIES() {
     return [
-      "cock-womble",
-      "fuck-muppet",
-      "numpty",
-      "cocksplat",
-      "jizz-trumpet",
-      "shitgibbon",
-      "fuck-nugget",
-      "ballbag"
+      "nugget",
+      "sack",
+      "splat",
+      "bag",
+      "rat",
+      "weasel",
+      "monkey",
+      "gibbon",
+      "muppet",
+      "womble",
+      "muppet",
+      "panda",
+      "goblin",
     ];
   }
 
-  pick() {
-    return this.pickItems(1);
+  ATTRIBUTES() {
+    return [
+      "cock",
+      "fuck",
+      "shit",
+      "turd",
+      "fart",
+      "jizz",
+      "spunk",
+      "arse",
+      "wank",
+    ];
+  }
+
+  build() {
+    return this.combine(this.ATTRIBUTES(), this.ENTITIES());
   }
 
   render(text) {
