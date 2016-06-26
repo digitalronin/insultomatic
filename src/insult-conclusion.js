@@ -1,38 +1,7 @@
 import Randomizer from "./randomizer";
+import InsultDataMixin from "./insult-data-mixin";
 
-class InsultConclusion extends Randomizer {
-
-  ENTITIES() {
-    return [
-      "nugget",
-      "sack",
-      "splat",
-      "bag",
-      "rat",
-      "weasel",
-      "monkey",
-      "gibbon",
-      "muppet",
-      "womble",
-      "muppet",
-      "panda",
-      "goblin",
-    ];
-  }
-
-  ATTRIBUTES() {
-    return [
-      "cock",
-      "fuck",
-      "shit",
-      "turd",
-      "fart",
-      "jizz",
-      "spunk",
-      "arse",
-      "wank",
-    ];
-  }
+class InsultConclusion extends InsultDataMixin(Randomizer) {
 
   build() {
     return this.combine(this.ATTRIBUTES(), this.ENTITIES());

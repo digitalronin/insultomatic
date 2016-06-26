@@ -14,7 +14,7 @@ class InsultGenerator {
 
   _generateHtml() {
     return this._template({
-      clauses: this._clauses().join(''),
+      clauses: this._clauses().join(', '),
       conclusion: this._conclusion()
     });
   }
@@ -35,8 +35,8 @@ class InsultGenerator {
 
   _clauses() {
     return (new InsultClause())
-      .pickItems(3)
-      .map((clause) => { return (new InsultClause()).render(clause); });
+      .build(3)
+      .map((clause) => clause);
   }
 
   _conclusion() {
