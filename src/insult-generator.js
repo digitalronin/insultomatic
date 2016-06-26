@@ -10,8 +10,7 @@ class InsultGenerator {
   setup() {
     this.target.innerHTML = `
       <p>
-        NSFW. Highly offensive. Click at your own risk.<br />
-        This is your only warning.
+        NSFW. Highly offensive. Click at your own risk.
       </p>
       ${this._button("I can take it. Hit me!")}
     `;
