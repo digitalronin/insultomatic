@@ -1,5 +1,5 @@
 import InsultGenerator from './insult-generator';
 
 (new InsultGenerator({
-  target: document.getElementsByTagName('main')[0]
+  target: document.getElementsByTagName('article')[0]
 })).setup();

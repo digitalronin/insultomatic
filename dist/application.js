@@ -8,7 +8,7 @@ var _insultGenerator2 = _interopRequireDefault(_insultGenerator);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 new _insultGenerator2.default({
-  target: document.getElementsByTagName('main')[0]
+  target: document.getElementsByTagName('article')[0]
 }).setup();
 
 },{"./insult-generator":5}],2:[function(require,module,exports){
