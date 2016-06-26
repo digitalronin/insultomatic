@@ -3,17 +3,25 @@ import InsultDataMixin from "./insult-data-mixin";
 
 class InsultConclusion extends InsultDataMixin(Randomizer) {
 
-  build() {
-    return this.combine(this.ATTRIBUTES(), this.ENTITIES(), '');
+  build(existingText) {
+    let attribute = this._pickItem(this.ATTRIBUTES(), existingText);
+    let entity    = this._pickItem(this.ENTITIES(), existingText);
+
+    return [attribute, entity].join('');
   }
 
-  render(text) {
-    return `
-      <span class="clause">
-        ${text}
-      </span>
-    `;
+  _pickItem(list, existingText) {
+    let foundUnusedItem = false;
+    let item;
+
+    while(!foundUnusedItem) {
+      item = this.pickItems(1, list);
+      foundUnusedItem = (existingText.indexOf(item) === -1);
+    }
+
+    return item;
   }
+
 }
 
 export default InsultConclusion;

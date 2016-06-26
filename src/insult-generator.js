@@ -13,9 +13,11 @@ class InsultGenerator {
   }
 
   _generateHtml() {
+    let clauses = this._clauses().join(', ');
+
     return this._template({
-      clauses: this._clauses().join(', '),
-      conclusion: this._conclusion()
+      clauses: clauses,
+      conclusion: this._conclusion(clauses)
     });
   }
 
@@ -39,8 +41,8 @@ class InsultGenerator {
       .map((clause) => clause);
   }
 
-  _conclusion() {
-    return (new InsultConclusion()).build();
+  _conclusion(existingText) {
+    return (new InsultConclusion()).build(existingText);
   }
 
   _bindActions() {
