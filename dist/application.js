@@ -159,11 +159,11 @@ var InsultDataMixin = function InsultDataMixin(Base) {
     _createClass(_class, [{
       key: "ENTITIES",
       value: function ENTITIES() {
-        var animals = ["rat", "weasel", "hound", "whippet", "ferret", "stoat", "monkey", "gibbon", "muppet", "womble", "muppet", "panda", "goblin", "toad", "hog", "frog", "gecko", "lizard", "penguin", "wombat", "slug", "worm", "maggot", "grub", "larva", "beetle", "chicken", "squirrel", "hamster", "gerbil", "rabbit", "rodent", "badger", "demon", "devil", "ogre", "zombie", "vampire", "pigeon", "parrot", "puffin", "turkey", "mongoose", "gargoyle", "troll", "monster", "snipe", "shrew", "shrike", "vulture"];
+        var animals = ["rat", "weasel", "hound", "puppy", "piglet", "whippet", "ferret", "stoat", "monkey", "gibbon", "muppet", "womble", "muppet", "panda", "goblin", "toad", "hog", "frog", "gecko", "lizard", "penguin", "wombat", "slug", "worm", "maggot", "grub", "larva", "beetle", "chicken", "squirrel", "hamster", "gerbil", "rabbit", "rodent", "badger", "demon", "devil", "ogre", "zombie", "vampire", "pigeon", "parrot", "puffin", "turkey", "mongoose", "gargoyle", "troll", "monster", "snipe", "shrew", "shrike", "vulture"];
 
         var actors = ["thief", "wanker", "fucker", "herder", "worrier", "botherer", "collector", "guzzler", "jerker", "tugger", "puller", "breeder", "poker", "fister", "farmer", "curdler"];
 
-        var things = ["nugget", "sack", "splat", "bag", "pot", "jug", "teapot", "waffle", "turd", "fart", "cock", "cunt", "twat", "trumpet", "whistle", "stick", "doughnut", "burger", "pizza", "cake", "salad", "trifle"];
+        var things = ["nugget", "sack", "splat", "bag", "pot", "jug", "teapot", "waffle", "turd", "fart", "cock", "cunt", "twat", "trumpet", "whistle", "stick", "doughnut", "burger", "crumpet", "pizza", "cake", "salad", "trifle"];
 
         return things.concat(actors).concat(animals);
       }
