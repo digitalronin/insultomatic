@@ -4,7 +4,7 @@ import InsultDataMixin from "./insult-data-mixin";
 class InsultConclusion extends InsultDataMixin(Randomizer) {
 
   build() {
-    return this.combine(this.ATTRIBUTES(), this.ENTITIES());
+    return this.combine(this.ATTRIBUTES(), this.ENTITIES(), '');
   }
 
   render(text) {

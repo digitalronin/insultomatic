@@ -2,18 +2,19 @@ import Randomizer from "./randomizer";
 import InsultDataMixin from "./insult-data-mixin";
 
 class InsultClause extends InsultDataMixin(Randomizer) {
-  DATA() {
-    return [
-      "ferret-haired",
-      "tiny-fingered",
-      "cheeto-faced",
-      "weasel-headed",
-    ];
-  }
 
   build(n) {
     n = n || 1;
-    return this.pickItems(n);
+    let rtn = [];
+    while(n > 0) {
+      rtn.push(this._buildClause());
+      n--;
+    }
+    return rtn;
+  }
+
+  _buildClause() {
+    return this.combine(this.ATTRIBUTES(), this.ANATOMISED(), '-');
   }
 
 }

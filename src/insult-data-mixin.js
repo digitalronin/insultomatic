@@ -16,6 +16,11 @@ let InsultDataMixin = Base => class extends Base {
       "muppet",
       "panda",
       "goblin",
+      "waffle",
+      "turd",
+      "fart",
+      "cock",
+      "cunt",
     ];
   }
 
@@ -30,6 +35,24 @@ let InsultDataMixin = Base => class extends Base {
       "spunk",
       "arse",
       "wank",
+      "cunt",
+    ];
+  }
+
+  ANATOMISED() {
+    return [
+      "faced",
+      "gutted",
+      "bellied",
+      "fingered",
+      "handed",
+      "chested",
+      "faced",
+      "haired",
+      "legged",
+      "arsed",
+      "footed",
+      "toed",
     ];
   }
 

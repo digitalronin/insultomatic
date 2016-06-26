@@ -18,8 +18,11 @@ class Randomizer {
     return rtn;
   }
 
-  combine(list1, list2) {
-    return this.pickItems(1, list1) + this.pickItems(1, list2);
+  combine(list1, list2, combiner) {
+    return [
+      this.pickItems(1, list1),
+      this.pickItems(1, list2)
+    ].join(combiner);
   }
 
   randomItem(list) {
