@@ -5,16 +5,17 @@ class InsultClause extends InsultDataMixin(Randomizer) {
 
   build(n) {
     n = n || 1;
+
     let rtn = [];
+    let attributes = this.pickItems(n, this.ATTRIBUTES());
+    let anatomised = this.pickItems(n, this.ANATOMISED());
+
     while(n > 0) {
-      rtn.push(this._buildClause());
+      rtn.push([ attributes[n - 1], anatomised[n - 1] ].join('-'));
       n--;
     }
-    return rtn;
-  }
 
-  _buildClause() {
-    return this.combine(this.ATTRIBUTES(), this.ANATOMISED(), '-');
+    return rtn;
   }
 
 }
