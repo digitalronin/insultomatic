@@ -215,7 +215,7 @@ var InsultGenerator = function () {
   _createClass(InsultGenerator, [{
     key: 'setup',
     value: function setup() {
-      this.target.innerHTML = '\n      <p>\n        NSFW. Do not click if easily offended.<br />\n        This is your only warning.\n      </p>\n      ' + this._button("I can take it. Hit me!") + '\n    ';
+      this.target.innerHTML = '\n      <p>\n        NSFW. Do not click if you are easily offended.<br />\n        This is your only warning.\n      </p>\n      ' + this._button("I can take it. Hit me!") + '\n    ';
       this._bindActions();
     }
   }, {

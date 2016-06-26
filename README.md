@@ -4,8 +4,14 @@ https://twitter.com/exlibris/status/746438427671814144
 
 # TODO
 
-- styling
+- why page
+- analytics
+- animation
 - deployment
+heroku create # https://git.heroku.com/limitless-brook-53275.git
+heroku buildpacks:set https://github.com/ryandotsmith/nginx-buildpack
+git push heroku master
+heroku open
 - tests
 - basic insult generation
   - data from hard-coded JSON files
