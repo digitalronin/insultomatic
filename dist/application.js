@@ -158,11 +158,11 @@ var InsultDataMixin = function InsultDataMixin(Base) {
     _createClass(_class, [{
       key: "ENTITIES",
       value: function ENTITIES() {
-        var animals = ["rat", "weasel", "ferret", "monkey", "gibbon", "muppet", "womble", "muppet", "panda", "goblin", "toad", "hog", "frog", "gecko", "lizard", "penguin", "wombat", "slug", "worm", "maggot", "chicken", "squirrel", "hamster", "gerbil", "rabbit", "rodent", "badger", "demon", "devil", "ogre", "zombie", "vampire", "pigeon", "puffin", "turkey", "mongoose", "gargoyle", "troll", "snipe", "shrew", "shrike", "vulture"];
+        var animals = ["rat", "weasel", "hound", "whippet", "ferret", "stoat", "monkey", "gibbon", "muppet", "womble", "muppet", "panda", "goblin", "toad", "hog", "frog", "gecko", "lizard", "penguin", "wombat", "slug", "worm", "maggot", "chicken", "squirrel", "hamster", "gerbil", "rabbit", "rodent", "badger", "demon", "devil", "ogre", "zombie", "vampire", "pigeon", "puffin", "turkey", "mongoose", "gargoyle", "troll", "snipe", "shrew", "shrike", "vulture"];
 
         var actors = ["thief", "wanker", "fucker", "herder", "worrier", "botherer", "collector", "guzzler", "farmer"];
 
-        var things = ["nugget", "sack", "splat", "bag", "waffle", "turd", "fart", "cock", "cunt", "trumpet", "doughnut", "cake", "salad", "trifle"];
+        var things = ["nugget", "sack", "splat", "bag", "waffle", "turd", "fart", "cock", "cunt", "trumpet", "whistle", "stick", "doughnut", "burger", "pizza", "cake", "salad", "trifle"];
 
         return things.concat(actors).concat(animals);
       }
